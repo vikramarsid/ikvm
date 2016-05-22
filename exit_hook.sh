@@ -21,3 +21,27 @@ sudo fakeroot debian/rules editconfigs
 
 sudo fakeroot debian/rules clean
 sudo fakeroot debian/rules binary-headers binary-generic
+
+#check compilation
+cd ..
+ls *.deb
+
+#linux-cloud-tools-4.4.0-22-generic_4.4.0-22.40_amd64.deb
+#linux-headers-4.4.0-22_4.4.0-22.40_all.deb
+#linux-headers-4.4.0-22-generic_4.4.0-22.40_amd64.deb
+#linux-image-4.4.0-22-generic_4.4.0-22.40_amd64.deb
+#linux-image-extra-4.4.0-22-generic_4.4.0-22.40_amd64.deb
+#linux-tools-4.4.0-22-generic_4.4.0-22.40_amd64.deb
+
+#Installing new compiled kernel
+sudo dpkg -i linux*2.6.38-7.37*.deb
+sudo reboot
+
+#check loaded kvm version and path to ko file
+lsmod | egrep kvm
+modinfo kvm-intel
+
+
+#change directory to printing facility module
+make
+sudo insmod count_exits.ko
