@@ -1,0 +1,237 @@
+60,163d59
+< /*INITIALIZING EXIT COUNTERS */
+< unsigned int count_handle_rmode_exception=0;
+< unsigned int count_handle_invalid_guest_state=0;
+< unsigned int count_handle_set_cr0=0;
+< unsigned int count_handle_set_cr4=0;
+< unsigned int count_handle_clts=0;
+< unsigned int count_handle_nop=0;
+< unsigned int count_handle_exception=0;
+< unsigned int count_handle_external_interrupt=0;
+< unsigned int count_handle_triple_fault=0;
+< unsigned int count_handle_nmi_window=0;
+< unsigned int count_handle_io=0;
+< unsigned int count_handle_cr=0;
+< unsigned int count_handle_dr=0;
+< unsigned int count_handle_cpuid=0;
+< unsigned int count_handle_rdmsr=0;
+< unsigned int count_handle_wrmsr=0;
+< unsigned int count_handle_interrupt_window=0;
+< unsigned int count_handle_halt=0;
+< unsigned int count_handle_invd=0;
+< unsigned int count_handle_invlpg=0;
+< unsigned int count_handle_rdpmc=0;
+< unsigned int count_handle_vmcall=0;
+< unsigned int count_handle_vmclear=0;
+< unsigned int count_handle_vmlaunch=0;
+< unsigned int count_handle_vmptrld=0;
+< unsigned int count_handle_vmptrst=0;
+< unsigned int count_handle_vmread=0;
+< unsigned int count_handle_vmresume=0;
+< unsigned int count_handle_vmwrite=0;
+< unsigned int count_handle_vmoff=0;
+< unsigned int count_handle_vmon=0;
+< unsigned int count_handle_tpr_below_threshold=0;
+< unsigned int count_handle_apic_access=0;
+< unsigned int count_handle_apic_write=0;
+< unsigned int count_handle_apic_eoi_induced=0;
+< unsigned int count_handle_wbinvd=0;
+< unsigned int count_handle_monitor_trap=0;
+< unsigned int count_handle_xsetbv=0;
+< unsigned int count_handle_task_switch=0;
+< unsigned int count_handle_machine_check=0;
+< unsigned int count_handle_ept_violation=0;
+< unsigned int count_handle_ept_misconfig=0;
+< unsigned int count_handle_pause=0;
+< unsigned int count_handle_mwait=0;
+< unsigned int count_handle_monitor=0;
+< unsigned int count_handle_pcommit=0;
+< unsigned int count_handle_invept=0;
+< unsigned int count_handle_invvpid=0;
+< unsigned int count_handle_xsaves=0;
+< unsigned int count_handle_xrstors=0;
+< unsigned int count_handle_pml_full=0;
+< EXPORT_SYMBOL(count_handle_rmode_exception);
+< EXPORT_SYMBOL(count_handle_invalid_guest_state);
+< EXPORT_SYMBOL(count_handle_set_cr0);
+< EXPORT_SYMBOL(count_handle_set_cr4);
+< EXPORT_SYMBOL(count_handle_clts);
+< EXPORT_SYMBOL(count_handle_nop);
+< EXPORT_SYMBOL(count_handle_exception);
+< EXPORT_SYMBOL(count_handle_external_interrupt);
+< EXPORT_SYMBOL(count_handle_triple_fault);
+< EXPORT_SYMBOL(count_handle_nmi_window);
+< EXPORT_SYMBOL(count_handle_io);
+< EXPORT_SYMBOL(count_handle_cr);
+< EXPORT_SYMBOL(count_handle_dr);
+< EXPORT_SYMBOL(count_handle_cpuid);
+< EXPORT_SYMBOL(count_handle_rdmsr);
+< EXPORT_SYMBOL(count_handle_wrmsr);
+< EXPORT_SYMBOL(count_handle_interrupt_window);
+< EXPORT_SYMBOL(count_handle_halt);
+< EXPORT_SYMBOL(count_handle_invd);
+< EXPORT_SYMBOL(count_handle_invlpg);
+< EXPORT_SYMBOL(count_handle_rdpmc);
+< EXPORT_SYMBOL(count_handle_vmcall);
+< EXPORT_SYMBOL(count_handle_vmclear);
+< EXPORT_SYMBOL(count_handle_vmlaunch);
+< EXPORT_SYMBOL(count_handle_vmptrld);
+< EXPORT_SYMBOL(count_handle_vmptrst);
+< EXPORT_SYMBOL(count_handle_vmread);
+< EXPORT_SYMBOL(count_handle_vmresume);
+< EXPORT_SYMBOL(count_handle_vmwrite);
+< EXPORT_SYMBOL(count_handle_vmoff);
+< EXPORT_SYMBOL(count_handle_vmon);
+< EXPORT_SYMBOL(count_handle_tpr_below_threshold);
+< EXPORT_SYMBOL(count_handle_apic_access);
+< EXPORT_SYMBOL(count_handle_apic_write);
+< EXPORT_SYMBOL(count_handle_apic_eoi_induced);
+< EXPORT_SYMBOL(count_handle_wbinvd);
+< EXPORT_SYMBOL(count_handle_monitor_trap);
+< EXPORT_SYMBOL(count_handle_xsetbv);
+< EXPORT_SYMBOL(count_handle_task_switch);
+< EXPORT_SYMBOL(count_handle_machine_check);
+< EXPORT_SYMBOL(count_handle_ept_violation);
+< EXPORT_SYMBOL(count_handle_ept_misconfig);
+< EXPORT_SYMBOL(count_handle_pause);
+< EXPORT_SYMBOL(count_handle_mwait);
+< EXPORT_SYMBOL(count_handle_monitor);
+< EXPORT_SYMBOL(count_handle_pcommit);
+< EXPORT_SYMBOL(count_handle_invept);
+< EXPORT_SYMBOL(count_handle_invvpid);
+< EXPORT_SYMBOL(count_handle_xsaves);
+< EXPORT_SYMBOL(count_handle_xrstors);
+< EXPORT_SYMBOL(count_handle_pml_full);
+< /*=======================================================================================================*/
+5276d5171
+< 	count_handle_rmode_exception++;
+5322d5216
+< 	count_handle_machine_check++;
+5335c5229
+< 	count_handle_exception++;
+---
+> 
+5441d5334
+< 	count_handle_external_interrupt++;
+5447d5339
+< 	count_handle_triple_fault++;
+5454d5345
+< 	count_handle_io++;
+5501d5391
+< 	count_handle_set_cr0++;
+5534d5423
+< 	count_handle_set_cr4++;
+5553d5441
+< 	count_handle_clts++;
+5569d5456
+< 	count_handle_cr++;
+5651c5538
+< 	count_handle_dr++;
+---
+> 
+5750d5636
+< 	count_handle_cpuid++;
+5756d5641
+< 	count_handle_rdmsr++;
+5779d5663
+< 	count_handle_wrmsr++;
+5801d5684
+< 	count_handle_tpr_below_threshold++;
+5809c5692
+< 	count_handle_interrupt_window++;
+---
+> 
+5823d5705
+< 	count_handle_halt++;
+5829d5710
+< 	count_handle_vmcall++;
+5836d5716
+< 	count_handle_invd++;
+5843c5723
+< 	count_handle_invlpg++;
+---
+> 
+5852c5732
+< 	count_handle_rdpmc++;
+---
+> 
+5861d5740
+< 	count_handle_wbinvd++;
+5868d5746
+< 	count_handle_xsetbv++;
+5879d5756
+< 	count_handle_xsaves++;
+5887d5763
+< 	count_handle_xrstors++;
+5910d5785
+< 			count_handle_apic_access++;
+5924d5798
+< 	count_handle_apic_eoi_induced++;
+5935d5808
+< 	count_handle_apic_write++;
+5941d5813
+< 	count_handle_task_switch++;
+6011c5883
+< 	count_handle_ept_violation++;
+---
+> 
+6013c5885
+< 	count_handle_exception++;
+---
+> 
+6057c5929
+< 	count_handle_ept_misconfig++;
+---
+> 
+6088c5960
+< 	count_handle_nmi_window++;
+---
+> 
+6107c5979
+< 	count_handle_invalid_guest_state++;
+---
+> 
+6479d6350
+< 	count_handle_pause++;
+6491d6361
+< 	count_handle_nop++;
+6498d6367
+< 	count_handle_mwait++;
+6505d6373
+< 	count_handle_monitor_trap++;
+6511d6378
+< 	count_handle_monitor++;
+6867d6733
+< 	count_handle_vmon++;
+7028d6893
+< 	count_handle_vmoff++;
+7040d6904
+< 	count_handle_vmclear++;
+7084d6947
+< 	count_handle_vmlaunch++;
+7091c6954
+< 	count_handle_vmresume++;
+---
+> 
+7283d7145
+< 	count_handle_vmread++;
+7327d7188
+< 	count_handle_vmwrite++;
+7382d7242
+< 	count_handle_vmptrld++;
+7432d7291
+< 	count_handle_vmptrst++;
+7459d7317
+< 	count_handle_invept++;
+7526d7383
+< 	count_handle_invvpid++;
+7591c7448
+< 	count_handle_pml_full++;
+---
+> 
+7615d7471
+< 	count_handle_pcommit++;
+11066d10921
+< 
+11069d10923
+< 
